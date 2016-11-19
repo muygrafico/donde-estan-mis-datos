@@ -1,3 +1,48 @@
 .header {
   background: $eastern-blue;
+  font-family: $main-font;
+
+  nav {
+    text-align: right;
+  }
+
+  ul {
+    list-style: none;
+    padding: 2em;
+
+    li {
+      display: inline-block;
+      padding-left: 1em;
+
+      a {
+        color: $white;
+        font-weight: 100;
+        letter-spacing: .05em;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .logo,
+  .people {
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 1em;
+  }
+
+  .people {
+    margin: 0 auto;
+
+    img {
+      max-width: $max-width-breakpoint;
+      width: 100%;
+    }
+
+  }
+
+
+
 }

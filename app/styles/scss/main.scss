@@ -4,3 +4,13 @@
 
 @import 'components/header';
 @import 'components/sub-header';
+@import 'components/about';
+@import 'components/footer';
+
+body {
+  font-family: $main-font;
+}
+
+* {
+  box-sizing: border-box;
+}

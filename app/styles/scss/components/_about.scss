@@ -1,0 +1,57 @@
+.about {
+  background: $bokara-gray;
+  color: $white;
+  padding: 4em 0;
+
+  h2 {
+    font-size: 42px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.1em;
+    font-weight: 100;
+    line-height: 1.8em;
+    margin: 0 auto;
+    margin-top: 2em;
+    max-width: $max-width-breakpoint - 250px;
+    opacity: .9;
+    padding: 0 2.75em;
+    text-align: center;
+
+    a {
+      color: $white;
+      font-weight: 300;
+    }
+
+    strong {
+      font-weight: 300;
+    }
+  }
+
+  hr {
+    background: $white-10;
+    border: 0;
+    height: 1px;
+    margin: 3em auto;
+    max-width: 200px;
+  }
+
+  ul {
+    text-align: center;
+
+    li { margin-bottom: 2em;}
+
+    span {
+      font-size: .8em;
+      font-weight: 100;
+      letter-spacing: .5px;
+      opacity: .85;
+    }
+
+    img { margin-top: 5px;}
+  }
+
+}
