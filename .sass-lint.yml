@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "lint": "scss-lint ."
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
