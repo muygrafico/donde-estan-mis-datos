@@ -1,6 +1,11 @@
 .sub-header {
   background: $sea-buckthorn;
 
+  .cloud-link {
+    margin-bottom: -3px;
+    text-align: right;
+  }
+
   p {
     color: $middle-dark;
     font-family: $main-font;
