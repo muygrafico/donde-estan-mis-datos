@@ -49,15 +49,23 @@
   }
 
   li {
-    border: 1px solid #e1e1e1;
+    border: 1px solid $zircon;
     border-right: 0;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
     width: 20%;
 
+    a {
+      display: inline-block;
+      height: 89px;
+      position: relative;
+      width: 100%;
+    }
+
+    .active {
+      background: $oyster-bay;
+    }
+
     &:last-child {
-      border-right: 1px solid #e1e1e1;
+      border-right: 1px solid $zircon;
     }
   }
 }
