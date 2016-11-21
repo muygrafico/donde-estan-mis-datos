@@ -1,3 +1,63 @@
 .evaluation {
   background: $light-cyan;
+  padding: 3em 1em;
+  position: relative;
+  z-index: 0;
+}
+
+.summary {
+  background: url('/img/resumen_evaluacion.png');
+  height: 695px;
+  margin: 0 auto 4em;
+  max-height: 695px;
+  max-width: 900px;
+  width: 900px;
+
+  .company {
+    cursor: pointer;
+    display: inline-block;
+    height: 134px;
+    position: absolute;
+    width: 118px;
+    z-index: 10;
+
+    &.claro { margin-left: 298px;}
+    &.telefonica { margin-left: 418px; }
+    &.tigo-une { margin-left: 538px; }
+    &.etb { margin-left: 658px; }
+    &.directv { margin-left: 778px; }
+  }
+}
+
+.evaluation-info {
+  background: url('/img/evaluation/claro.png');
+  background-position: 0 90px;
+  background-repeat: no-repeat;
+  height: 785px;
+  margin: 0 auto;
+  max-height: 785px;
+  max-width: 900px;
+  position: relative;
+  width: 900px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: 90px;
+    padding: 0;
+    position: absolute;
+  }
+
+  li {
+    border: 1px solid #e1e1e1;
+    border-right: 0;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+
+    &:last-child {
+      border-right: 1px solid #e1e1e1;
+    }
+  }
 }
