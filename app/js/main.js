@@ -48,31 +48,9 @@
     handleActiveEvaluationLink(company)
   }
 
-  var claros = Array.from(document.getElementsByClassName('claro'))
+  var companiesButtons = Array.from(document.getElementsByClassName('company'))
 
-  claros.forEach(function (element) {
-    element.addEventListener('click', updateEvaluation)
-  })
-
-  var telefonicas = Array.from(document.getElementsByClassName('telefonica'))
-
-  telefonicas.forEach(function (element) {
-    element.addEventListener('click', updateEvaluation)
-  })
-
-  var tigoUnes = Array.from(document.getElementsByClassName('tigo-une'))
-
-  tigoUnes.forEach(function (element) {
-    element.addEventListener('click', updateEvaluation)
-  })
-
-  var etbs = Array.from(document.getElementsByClassName('etb'))
-  etbs.forEach(function (element) {
-    element.addEventListener('click', updateEvaluation)
-  })
-
-  var directvs = Array.from(document.getElementsByClassName('directv'))
-  directvs.forEach(function (element) {
+  companiesButtons.forEach(function (element) {
     element.addEventListener('click', updateEvaluation)
   })
 })()
