@@ -1,6 +1,12 @@
 (function () {
-  function f1 () {
-    console.log('calling function f1')
+  function f1 (event) {
+    console.log(event.target)
+
+    var company = event.target.getAttribute('company')
+    document.getElementsByClassName('evaluation-info')[0]
+      .style.backgroundImage = "url('/img/evaluation/" + company + ".png')"
+
+    document.getElementsByClassName('active')[1].className = ''
   }
 
   var claros = Array.from(document.getElementsByClassName('claro'))
@@ -9,15 +15,25 @@
     element.addEventListener('click', f1)
   })
 
-  var telefonica = document.getElementsByClassName('telefonica')[0]
-  telefonica.addEventListener('click', f1)
+  var telefonicas = Array.from(document.getElementsByClassName('telefonica'))
 
-  var tigoUne = document.getElementsByClassName('tigo-une')[0]
-  tigoUne.addEventListener('click', f1)
+  telefonicas.forEach(function (element) {
+    element.addEventListener('click', f1)
+  })
 
-  var etb = document.getElementsByClassName('etb')[0]
-  etb.addEventListener('click', f1)
+  var tigoUnes = Array.from(document.getElementsByClassName('tigo-une'))
 
-  var directv = document.getElementsByClassName('directv')[0]
-  directv.addEventListener('click', f1)
+  tigoUnes.forEach(function (element) {
+    element.addEventListener('click', f1)
+  })
+
+  var etbs = Array.from(document.getElementsByClassName('etb'))
+  etbs.forEach(function (element) {
+    element.addEventListener('click', f1)
+  })
+
+  var directvs = Array.from(document.getElementsByClassName('directv'))
+  directvs.forEach(function (element) {
+    element.addEventListener('click', f1)
+  })
 })()

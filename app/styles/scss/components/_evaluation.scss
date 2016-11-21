@@ -51,9 +51,11 @@
   li {
     border: 1px solid $zircon;
     border-right: 0;
+    cursor: pointer;
     width: 20%;
 
     a {
+      cursor: pointer;
       display: inline-block;
       height: 89px;
       position: relative;
