@@ -1,10 +1,17 @@
 (function () {
-  function updateEvaluation (event) {
-    console.log(event.target)
+  function handleActiveTab (company) {
+    var elems = document.querySelector('.active')
+    if (elems !== null) { elems.classList.remove('active') }
+    var d = document.getElementsByClassName(company)[1]
+    d.className += ' active'
+  }
 
+  function updateEvaluation (event) {
     var company = event.target.getAttribute('company')
     document.getElementsByClassName('evaluation-info')[0]
       .style.backgroundImage = "url('/img/evaluation/" + company + ".png')"
+
+    handleActiveTab(company)
   }
 
   var claros = Array.from(document.getElementsByClassName('claro'))
