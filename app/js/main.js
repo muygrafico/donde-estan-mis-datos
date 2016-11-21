@@ -42,7 +42,7 @@
   function updateEvaluation (event) {
     var company = event.target.getAttribute('company')
     document.getElementsByClassName('evaluation-info')[0]
-      .style.backgroundImage = "url('../../img/evaluation/" + company + ".png')"
+      .style.backgroundImage = "url('img/evaluation/" + company + ".png')"
 
     handleActiveTab(company)
     handleActiveEvaluationLink(company)
