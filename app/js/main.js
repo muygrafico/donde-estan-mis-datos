@@ -3,7 +3,7 @@
     'claro': 'https://karisma.org.co/descargar/donde-estan-mis-datos-informe-2016-claro/',
     'telefonica': 'https://karisma.org.co/descargar/donde-estan-mis-datos-informe-2016-telefonica-movistar/',
     'tigoUne': 'https://karisma.org.co/descargar/donde-estan-mis-datos-informe-2016-tigo-une/',
-    'etb': 'https://karisma.org.co/descargar/donde-estan-mis-datos-informe-2016-tigo-une/',
+    'etb': 'https://karisma.org.co/descargar/donde-estan-mis-datos-informe-2016-etb/',
     'directv': 'https://karisma.org.co/descargar/donde-estan-mis-datos-informe-2016-directv/'
   }
 
